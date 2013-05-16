@@ -401,8 +401,8 @@ def _setup_logging ():
   pox.core._default_log_handler = logging.StreamHandler()
   formatter = logging.Formatter(logging.BASIC_FORMAT)
   pox.core._default_log_handler.setFormatter(formatter)
-  logging.getLogger().addHandler(pox.core._default_log_handler)
-  logging.getLogger().setLevel(logging.INFO)
+  # logging.getLogger().addHandler(pox.core._default_log_handler)
+  # logging.getLogger().setLevel(logging.INFO)
 
 
   # Now set up from config file if specified...

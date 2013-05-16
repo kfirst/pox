@@ -55,9 +55,10 @@ def getLogger (name=None, moreFrames=0):
       name = name[0:-3]
     elif name.endswith('.pyc'):
       name = name[0:-4]
-    if name.startswith(_path):
-      name = name[len(_path):]
-    elif name.startswith(_ext_path):
+    # if name.startswith(_path):
+    #   name = name[len(_path):]
+    # elif name.startswith(_ext_path):
+    if name.startswith(_ext_path):
       name = name[len(_ext_path):]
     name = name.replace('/', '.').replace('\\', '.') #FIXME: use os.path or whatever
 
